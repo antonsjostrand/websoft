@@ -5,8 +5,81 @@ html {
     overflow-y: scroll;
 }
 
+/*
+Header style
+*/
+header {
+    height: 50px;
+}
+
+/*
+Main menu navigation style
+*/
+.menu-nav{
+    padding: 10px;
+    color: gray;
+    float: left;
+}
+
+.menu-nav a:hover{
+    font-size: 25px;
+    color: skyblue;
+}
+
+/*
+Body style
+*/
 body {
     margin: 8px auto;
-    background: #fff;
-    width: 700px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right,#29323c,#485563);
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    color: white;
+    width: 900px;
+}
+
+/*
+Article style
+*/
+.parent {
+    height: 250px;
+    width: 100%;
+}
+
+.picture{
+    text-align: center;
+    float: left;
+    height: 250px;
+    width: 200px;
+}
+
+.picture p {
+    margin: 20px;
+}
+
+.picture p img {
+    border-radius: 10%;
+}
+
+article div .presentation{
+    float: right;
+    font-size: 18px;
+    height: 250px;
+    width: calc(100% - 200px);
+}
+
+/*
+Footer style
+*/
+footer {
+    display: inline;
+    font-size: 12px;
+    position: relative;
+}
+
+/*
+Element with no class styles
+*/
+a:visited {
+    color: white;
 }
