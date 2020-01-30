@@ -39,7 +39,7 @@ body {
 }
 
 /*
-Article style
+Article style me.html
 */
 .parent {
     height: 250px;
@@ -66,6 +66,22 @@ article div .presentation{
     font-size: 18px;
     height: 250px;
     width: calc(100% - 200px);
+}
+
+/*
+Section style report.html
+*/
+.report-question{
+    margin: 0px;
+    margin-top: 7px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.report-answer {
+    margin: 0px;
 }
 
 /*
