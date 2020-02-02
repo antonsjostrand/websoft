@@ -16,14 +16,20 @@ header {
 Main menu navigation style
 */
 .menu-nav{
-    padding: 10px;
-    color: gray;
+    color: transparent;
     float: left;
+    padding-top: 10px;
 }
 
-.menu-nav a:hover{
-    font-size: 25px;
+.menu-nav a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 14px 16px;
+}
+
+.menu-nav a:hover {
     color: skyblue;
+    border-bottom: 3px solid skyblue;
 }
 
 /*
@@ -94,6 +100,52 @@ footer {
 }
 
 /*
+Table style
+*/
+.schoolTable {
+    width: inherit;
+    box-shadow: 5px 10px black;
+    margin-bottom: 20px;
+}
+
+.schoolColumn {
+    background-color: skyblue;
+}
+
+.schoolRow0 {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.schoolRow1 {
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+}
+
+.schoolRow0:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.schoolRow1:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+/*
+Button styles
+*/
+.fetchButton {
+    border-radius: 4%;
+    background-color: skyblue;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+/*
 Element with no class styles
 */
 a:visited {
@@ -106,4 +158,10 @@ a:link {
 
 img {
     border-radius: 2%;
+}
+
+select {
+    background-color: skyblue;
+    float: right;
+    height: 30px;
 }
