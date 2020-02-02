@@ -5,6 +5,14 @@
 (function () {
     "use strict";
 
+    var source;
+
+    if(document.title == "Main page of course website"){
+        source = 'work/report/img/logo-hkr.jpg';
+    }else{
+        source = '../report/img/logo-hkr.jpg';
+    }
+
     var createdImage;
     var footer = document.getElementById("pageFooter");
     var moveableImage = {
@@ -14,7 +22,7 @@
         opacity : 1,
         position : 0,
         positionFlag : true,
-        src : '../report/img/logo-hkr.jpg',
+        src : source,
     };
 
     //Show image
