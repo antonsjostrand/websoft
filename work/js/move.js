@@ -15,11 +15,10 @@
 
     var createdImage;
     var footer = document.getElementById("pageFooter");
-    var moveableImage = {
-        width : 30,
-        height : 30,
+
+    //Object used to handle my image.
+    var moveableImageProps = {
         created : false,
-        opacity : 1,
         position : 0,
         positionFlag : true,
         src : source,
@@ -38,29 +37,27 @@
 
     //Hide image
     footer.addEventListener("mouseleave", function(){
-        console.log('Leaved footer..')
+        console.log('Left footer..')
 
-        moveableImage.opacity = 0;
-        createdImage.style.opacity = moveableImage.opacity;
+        createdImage.style.opacity = 0;
         footer.appendChild(createdImage);
 
     });
     
     //Create image once, returns created object if already created.
     function createImage(){
-        if (moveableImage.created){
-            moveableImage.opacity = 1;
-            createdImage.style.opacity = moveableImage.opacity;
+        if (moveableImageProps.created){
+            createdImage.style.opacity = 1;
             return createdImage;
         }
         
         createdImage = document.createElement("img");
-        createdImage.width = moveableImage.width;
-        createdImage.height = moveableImage.height;
-        createdImage.src = moveableImage.src;
-        createdImage.style.opacity = moveableImage.opacity;
+        createdImage.width = 30;
+        createdImage.height = 30;
+        createdImage.src = moveableImageProps.src;
+        createdImage.style.opacity = 1;
         createdImage.style.position = 'absolute';
-        moveableImage.created = true;
+        moveableImageProps.created = true;
 
         return createdImage;
 
@@ -69,22 +66,21 @@
     //Moves the image to the left or to the right depending on the current value
     //of the objects flag.
     function moveImage(){
-        console.log("MOVE");
-        if (moveableImage.positionFlag){
-            moveableImage.position += 5;
-            createdImage.style.left = moveableImage.position + "px";
+        if (moveableImageProps.positionFlag){
+            moveableImageProps.position += 5;
+            createdImage.style.left = moveableImageProps.position + "px";
 
-            if (moveableImage.position > 240){
-                moveableImage.positionFlag = false;
+            if (moveableImageProps.position > 240){
+                moveableImageProps.positionFlag = false;
             }
 
             footer.appendChild(createdImage);
         } else{
-            moveableImage.position -= 5;
-            createdImage.style.left = moveableImage.position + "px";
+            moveableImageProps.position -= 5;
+            createdImage.style.left = moveableImageProps.position + "px";
 
-            if (moveableImage.position == 0){
-                moveableImage.positionFlag = true;
+            if (moveableImageProps.position == 0){
+                moveableImageProps.positionFlag = true;
             }
 
             footer.appendChild(createdImage);
