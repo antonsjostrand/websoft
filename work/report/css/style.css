@@ -146,6 +146,46 @@ Button styles
 }
 
 /*
+Flag style
+*/
+.flag {
+    margin: auto;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+.vertical {
+    position: absolute;
+    left: 30%;
+    width: 60px;
+    height: 300px;
+}
+
+.horizontal {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 60px;
+    margin-top: -30px;
+}
+
+/*
+Flag links div style
+*/
+.flagLinks {
+    margin: auto;
+    width: fit-content;
+    padding: 8px;
+}
+
+.flagLinks a {
+    margin-left: 5px;
+}
+
+/*
 Element with no class styles
 */
 a:visited {
