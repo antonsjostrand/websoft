@@ -2,4 +2,11 @@
 <h1>Welcome to the lotto-page</h1>
 <h2>Below you will see todays numbers..</h2>
 
-<p>Lotto numbers of today: <%= lottoRow %></p>
+<%
+ var jsonResponse = data;
+ console.info("\n--- jsonResponse ---");
+ console.info(jsonResponse);
+ console.info("--------------------");
+%>
+
+<p>Lotto numbers of today: <%= jsonResponse.lottoRow %></p>
