@@ -17,7 +17,7 @@ const middleware = require("./middleware/index.js");
 app.set("view engine", "ejs");
 
 app.use(middleware.logIncomingToConsole);
-app.use(express.static(path.join(__dirname, "report")));
+app.use(express.static(path.join(__dirname, "/report")));
 app.use("/", routeIndex);
 app.use("/", routeLotto);
 

@@ -134,6 +134,47 @@ Table style
     color: white;
 }
 
+.lottoTable {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 10px black;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(88, 84, 84);
+}
+
+.inputTable {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 10px black;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(88, 84, 84);
+}
+
+.hit {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.noHit {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
+
+.matching {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50%;
+}
+
 /*
 Button styles
 */
