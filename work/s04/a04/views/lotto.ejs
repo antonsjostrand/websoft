@@ -9,11 +9,8 @@ console.info(jsonResponse);
 console.info("--------------------");
 
 var number = 1;
+var tdLabel = "";
 var lottoRow = jsonResponse.lottoRow;
-
-for (let t = 0; t < lottoRow.length; t++){
-    console.log(lottoRow[t]);
-}
 
 %>
 
@@ -29,11 +26,12 @@ for (let t = 0; t < lottoRow.length; t++){
             <% for (let j = 0; j < 5; j++){ %>
                 <%
                     if(lottoRow.indexOf(number) != -1){
-                        console.log(lottoRow.indexOf(number));
-                        console.log(number + "is in lottorow");
+                        tdLabel = "class=\"hit\"";
+                    }else {
+                        tdLabel = "class=\"noHit\"";
                     }
                 %>
-                <td><%= number++ %></td>
+                <td <%= tdLabel %>><%= number++ %></td>
             <% }; %>
         </tr>
 
@@ -44,6 +42,11 @@ for (let t = 0; t < lottoRow.length; t++){
 
 </table>
 
+<% if(jsonResponse.queryRow != '') {
+    var queryRow = jsonResponse.queryRow;
+    console.log(queryRow);    
+%>
+
 <table class="inputTable" id="inputTable">
 
     <thead class="inputHead">YOUR NUMBERS</thead>
@@ -52,7 +55,14 @@ for (let t = 0; t < lottoRow.length; t++){
            
         <tr>
             <% for (let j = 0; j < 5; j++){ %>
-                <td><%= number++ %></td>
+                <%
+                    if(queryRow.indexOf(String(number)) != -1){
+                        tdLabel = "class=\"hit\"";
+                    }else {
+                        tdLabel = "class=\"noHit\"";
+                    }
+                %>
+                <td <%= tdLabel %>><%= number++ %></td>
             <% }; %>
         </tr>
 
@@ -60,3 +70,7 @@ for (let t = 0; t < lottoRow.length; t++){
 
 </table>
 
+<p>You had: <%= jsonResponse.numberOfMatches %> matches!</p>
+<p>The matching numbers are: <%= jsonResponse.matchingNumbers %></p>
+
+<% }; %>
