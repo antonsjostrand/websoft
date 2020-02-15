@@ -1,12 +1,62 @@
-<h1>Hey!</h1>
 <h1>Welcome to the lotto-page</h1>
-<h2>Below you will see todays numbers..</h2>
+<h2>Todays numbers are: </h2>
 
 <%
- var jsonResponse = data;
- console.info("\n--- jsonResponse ---");
- console.info(jsonResponse);
- console.info("--------------------");
+"use strict"
+var jsonResponse = data;
+console.info("\n--- jsonResponse ---");
+console.info(jsonResponse);
+console.info("--------------------");
+
+var number = 1;
+var lottoRow = jsonResponse.lottoRow;
+
+for (let t = 0; t < lottoRow.length; t++){
+    console.log(lottoRow[t]);
+}
+
 %>
 
-<p>Lotto numbers of today: <%= jsonResponse.lottoRow %></p>
+<p><%= jsonResponse.lottoRow %></p>
+
+<table class="lottoTable" id="lottoTable">
+
+    <thead class="lottoHead">LOTTO NUMBERS</thead>
+
+    <% for(let i = 0; i < 7; i++){ %>
+           
+        <tr>
+            <% for (let j = 0; j < 5; j++){ %>
+                <%
+                    if(lottoRow.indexOf(number) != -1){
+                        console.log(lottoRow.indexOf(number));
+                        console.log(number + "is in lottorow");
+                    }
+                %>
+                <td><%= number++ %></td>
+            <% }; %>
+        </tr>
+
+    <% 
+        };
+        number = 1;
+    %>
+
+</table>
+
+<table class="inputTable" id="inputTable">
+
+    <thead class="inputHead">YOUR NUMBERS</thead>
+
+    <% for(let i = 0; i < 7; i++){ %>
+           
+        <tr>
+            <% for (let j = 0; j < 5; j++){ %>
+                <td><%= number++ %></td>
+            <% }; %>
+        </tr>
+
+    <% }; %>
+
+</table>
+
