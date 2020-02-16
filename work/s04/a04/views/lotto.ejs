@@ -113,6 +113,7 @@ if (jsonResponse.numberOfMatches >= 0 && Array.isArray(jsonResponse.matchingNumb
     </div>
     <div class="lottoInfo">
 
+        <p>The above tables display the numbers drawn and the ones you entered.<br> Red color shows what numbers have been drawn or entered. Green color shows which numbers are matching. </p>
         <p>You had: <%= jsonResponse.numberOfMatches %> matches!</p>
 
         <% if (jsonResponse.matchingNumbers.length != 0) { %>
