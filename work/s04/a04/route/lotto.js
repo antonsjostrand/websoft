@@ -43,17 +43,30 @@ router.get('/lotto', (req, res) => {
 
 //Route for /lotto-json
 router.get('/lotto-json', (req, res) => {
-    let queryString = req.query.row.split(",");
-    let lottoRow = lottoDraw();
-    let numberOfMatches = calculateMatchingNumbers(lottoRow, queryString);
+    let queryString = req.query.row;
 
-    let jsonResponse = formatJsonResponse(lottoRow, queryString, numberOfMatches);
+    if (queryString === undefined){
+        let lottoRow = lottoDraw();
+        let jsonResponse = formatJsonResponse(lottoRow);
 
-    let lotto = {
-        data : jsonResponse,
-    };
+        let lotto = {
+            data : jsonResponse,
+        };
 
-    res.render("lotto", lotto);
+        res.render("lotto", lotto);
+
+    }else {
+        let queryString = req.query.row.split(",");
+        let lottoRow = lottoDraw();
+        let numberOfMatches = calculateMatchingNumbers(lottoRow, queryString);
+        let jsonResponse = formatJsonResponse(lottoRow, queryString, numberOfMatches);
+
+        let lotto = {
+            data : jsonResponse,
+        };
+
+        res.render("lotto", lotto);
+    }
 
 })
 

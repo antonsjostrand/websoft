@@ -2,10 +2,6 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-<body>
-<h1>Welcome to the lotto-page</h1>
-<h2>Todays numbers are: </h2>
-
 <%
 var jsonResponse = data;
 console.info("\n--- jsonResponse ---");
@@ -17,87 +13,120 @@ var tdLabel = "";
 var lottoRow = jsonResponse.lottoRow;
 var queryRow;
 var userInput = false;
+var showTables = false;
 
 if (jsonResponse.queryRow != ''){
     userInput = true;
     queryRow = jsonResponse.queryRow;
 }
 
+if (jsonResponse.numberOfMatches >= 0 && Array.isArray(jsonResponse.matchingNumbers)){
+    showTables = true;
+}
+
 %>
 
-<p><%= jsonResponse.lottoRow %></p>
+<body>
 
-<table class="lottoTable" id="lottoTable">
+    <div class="lottoInfo">
+        <h1>Welcome to the lotto-page</h1>
+        <h2>Todays numbers are: </h2>
+        <p><%= jsonResponse.lottoRow %></p>
+    </div>
 
-    <thead class="lottoHead">LOTTO NUMBERS</thead>
 
-    <% for(let i = 0; i < 7; i++){ %>
-           
-        <tr>
-            <% for (let j = 0; j < 5; j++){ %>
-                <%
-                if(userInput){
-                    if(lottoRow.indexOf(number) != -1){
-                        tdLabel = "hit";
-                        if(queryRow.indexOf(String(number)) != -1){
-                            tdLabel = "matching";
-                        }
-                    }else {
-                        tdLabel = "noHit";
-                    }
-                }else{
-                    if(lottoRow.indexOf(number) != -1){
-                        tdLabel = "hit";
-                    }else {
-                        tdLabel = "noHit";
-                    }
-                }
+<% if (showTables) { %>
+
+    <div class="container">
+
+        <div class="tableContainer">
+
+            <table class="lottoTable" id="lottoTable">
+
+                <thead class="lottoHead">LOTTO NUMBERS</thead>
+
+                <% for(let i = 0; i < 7; i++){ %>
+                    
+                    <tr>
+                        <% for (let j = 0; j < 5; j++){ %>
+                            <%
+                            if(userInput){
+                                if(lottoRow.indexOf(number) != -1){
+                                    tdLabel = "hit";
+                                    if(queryRow.indexOf(String(number)) != -1){
+                                        tdLabel = "matching";
+                                    }
+                                }else {
+                                    tdLabel = "noHit";
+                                }
+                            }else{
+                                if(lottoRow.indexOf(number) != -1){
+                                    tdLabel = "hit";
+                                }else {
+                                    tdLabel = "noHit";
+                                }
+                            }
+                            %>
+                            <td class=<%= tdLabel %>><%= number++ %></td>
+                        <% }; %>
+                    </tr>
+
+                <% 
+                    };
+                    number = 1;
                 %>
-                <td class=<%= tdLabel %>><%= number++ %></td>
-            <% }; %>
-        </tr>
 
-    <% 
-        };
-        number = 1;
-    %>
+            </table>
+        </div>
 
-</table>
+            <% if(jsonResponse.queryRow != '') {
+                var queryRow = jsonResponse.queryRow;
+            %>
+        <div class="tableContainer">
 
-<% if(jsonResponse.queryRow != '') {
-    var queryRow = jsonResponse.queryRow;
-    console.log(queryRow);    
+            <table class="inputTable" id="inputTable">
+
+                <thead class="inputHead">YOUR NUMBERS</thead>
+
+                <% for(let i = 0; i < 7; i++){ %>
+                    
+                    <tr>
+                        <% for (let j = 0; j < 5; j++){ %>
+                            <%
+                                if(queryRow.indexOf(String(number)) != -1){
+                                    tdLabel = "hit";
+                                    if(lottoRow.indexOf(number) != -1){
+                                        tdLabel = "matching";
+                                    }
+                                }else {
+                                    tdLabel = "noHit";
+                                }
+                            %>
+                            <td class=<%= tdLabel %>><%= number++ %></td>
+                        <% }; %>
+                    </tr>
+
+                <% }; %>
+
+            </table>
+        </div>
+    </div>
+    <div class="lottoInfo">
+
+        <p>You had: <%= jsonResponse.numberOfMatches %> matches!</p>
+
+        <% if (jsonResponse.matchingNumbers.length != 0) { %>
+            <p>The matching numbers are: <%= jsonResponse.matchingNumbers %></p>
+        <% } else { %>
+            <p>You had not matching numbers this time..</p>
+
+    </div>
+
+<%
+        }; 
+    };
+};
 %>
-
-<table class="inputTable" id="inputTable">
-
-    <thead class="inputHead">YOUR NUMBERS</thead>
-
-    <% for(let i = 0; i < 7; i++){ %>
-           
-        <tr>
-            <% for (let j = 0; j < 5; j++){ %>
-                <%
-                    if(queryRow.indexOf(String(number)) != -1){
-                        tdLabel = "hit";
-                        if(lottoRow.indexOf(number) != -1){
-                            tdLabel = "matching";
-                        }
-                    }else {
-                        tdLabel = "noHit";
-                    }
-                %>
-                <td class=<%= tdLabel %>><%= number++ %></td>
-            <% }; %>
-        </tr>
-
-    <% }; %>
-
-</table>
-
-<p>You had: <%= jsonResponse.numberOfMatches %> matches!</p>
-<p>The matching numbers are: <%= jsonResponse.matchingNumbers %></p>
-
-<% }; %>
+    
 
 </body>

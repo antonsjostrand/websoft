@@ -134,6 +134,25 @@ Table style
     color: white;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 320px;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-right: 20px;
+    height: 300px;
+}
+
+.lottoInfo {
+    width: inherit;
+    height: 150px;
+}
+
 .lottoTable {
     width: 200px;
     height: 200px;
