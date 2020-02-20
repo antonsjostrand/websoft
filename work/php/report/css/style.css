@@ -1,0 +1,207 @@
+/*
+ * Comments are written as C++ style. 
+ */
+html {
+    overflow-y: scroll;
+}
+
+/*
+Header style
+*/
+header {
+    height: 50px;
+}
+
+/*
+Main menu navigation style
+*/
+.menu-nav{
+    color: transparent;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 14px 16px;
+}
+
+.menu-nav a:hover {
+    color: skyblue;
+    border-bottom: 3px solid skyblue;
+}
+
+/*
+Body style
+*/
+body {
+    margin: 8px auto;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right,#29323c,#485563);
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    color: white;
+    width: 900px;
+}
+
+/*
+Article style me.html
+*/
+.parent {
+    height: 250px;
+    width: 100%;
+}
+
+.picture{
+    text-align: center;
+    float: left;
+    height: 250px;
+    width: 200px;
+}
+
+.picture p {
+    margin: 20px;
+}
+
+.picture p img {
+    border-radius: 10%;
+}
+
+article div .presentation{
+    float: right;
+    font-size: 18px;
+    height: 250px;
+    width: calc(100% - 200px);
+}
+
+/*
+Section style report.html
+*/
+.report-question{
+    margin: 0px;
+    margin-top: 7px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.report-answer {
+    margin: 0px;
+}
+
+/*
+Footer style
+*/
+footer {
+    height: 75px;
+    font-size: 12px;
+    position: relative;
+}
+
+/*
+Table style
+*/
+.schoolTable {
+    width: inherit;
+    box-shadow: 5px 10px black;
+    margin-bottom: 20px;
+}
+
+.schoolColumn {
+    background-color: skyblue;
+}
+
+.schoolRow0 {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.schoolRow1 {
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+}
+
+.schoolRow0:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.schoolRow1:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+/*
+Button styles
+*/
+.fetchButton {
+    border-radius: 4%;
+    background-color: skyblue;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+/*
+Flag style
+*/
+.flag {
+    margin: auto;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+.vertical {
+    position: absolute;
+    left: 30%;
+    width: 60px;
+    height: 300px;
+}
+
+.horizontal {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 60px;
+    margin-top: -30px;
+}
+
+/*
+Flag links div style
+*/
+.flagLinks {
+    margin: auto;
+    width: fit-content;
+    padding: 8px;
+}
+
+.flagLinks a {
+    margin-left: 5px;
+}
+
+/*
+Element with no class styles
+*/
+a:visited {
+    color: white;
+}
+
+a:link {
+    color: skyblue;
+}
+
+img {
+    border-radius: 2%;
+}
+
+select {
+    background-color: skyblue;
+    float: right;
+    height: 30px;
+}
