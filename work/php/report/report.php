@@ -159,7 +159,29 @@
 
 <section>
 <h2>S05</h2>
-<p>Here is the text for this section.</p>
+        <p class="report-question">How do you feel about PHP as a programming language?</p>
+                
+        <p class="report-answer">
+            Well I would say, even though I have limited experience with PHP, that I could imagine working with it after I graduate. As with every programming language it sure has features I like and some that I don't like. One feature that is a little of both is the variable declaration, I'm so used to having to declare the type when creating variables and when I don't have to it is both satisfying and not, I also miss the feeling of extra control that hard-typed languages provide. One thing that I liked was the way we worked with the database through the PDO class.
+        </p>
+
+        <p class="report-question">Can you compare PHP to other languages you know?</p>
+                
+        <p class="report-answer">
+            There is one similarity that comes to mind when comparing JS and PHP, and that is the variable declaration. They way they don't need to have type. Comparing PHP to the programming language we have used the most Java, nothing similar comes to mind except that both are server-side languages. The most similar language I've seen and worked with a little bit is Perl. I touched perl at Axis, and the syntax and formatting is quite similar to PHP.
+        </p>
+
+        <p class="report-question">Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?</p>
+                
+        <p class="report-answer">
+            I aimed for the grade 5 this exercise. Yet again I tried to work my way through all the requirements one by one, commiting and pushing my changes when I had reached each grade. I must say that I'm quite pleased with the result, the functionality is in place and it does what it is supposed to. However I feel like I could probably have structured the code a bit better and probably made it even better. I also feel that the design of the pages could have been better as well.
+        </p>
+
+        <p class="report-question">What is your TIL for this course section?</p>
+                
+        <p class="report-answer">
+            In this section I must say that I enchanced both my basic HTML skills, but most importantly I've started to understand PHP better and what it is capable of. One thing that I learned that I found quite fun and useful is how to format a querystring from the HTML-form.
+        </p>
 </section>
 
 <section>
