@@ -17,5 +17,7 @@
             <a href="schools.php">Schools</a>
             <a href="flags.php">Flags</a>
             <a href="search.php">Search</a>
+            <a href="create.php">Create</a>
+            <a href="update.php">Update</a>
         </nav>
     </header>

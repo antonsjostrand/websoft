@@ -10,7 +10,7 @@
 
     if($value){
         $db = connectDatabase($dsn);
-        $res = selectAll($db, $value);
+        $res = selectWildcard($db, $value);
     }
 ?>
 
