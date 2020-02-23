@@ -166,3 +166,23 @@ function selectId($db, $id){
     }
 
  }
+
+ /**
+  * Function used to delete a row in the database with the help of ID
+  *
+  * @var object $db - database object
+  * @var int $id - id of the to row to delete
+  */
+function delete($db, $id){
+    try{
+        $query = "DELETE FROM tech WHERE id = ?";
+        
+        $stmt = $db->prepare($query);
+        $stmt->execute([$id]);
+        
+    }catch(PDOException $e) {
+        echo "Error executing the query:<br>\n";
+        print_r($query);
+        throw $e;
+    }
+}

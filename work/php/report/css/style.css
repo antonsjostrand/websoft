@@ -24,7 +24,7 @@ Main menu navigation style
 .menu-nav a {
     text-decoration: none;
     margin: 10px;
-    padding: 14px 16px;
+    padding: 10px 10px;
 }
 
 .menu-nav a:hover {
@@ -215,6 +215,14 @@ Flag links div style
 
 .flagLinks a {
     margin-left: 5px;
+}
+
+/*
+Form style
+*/
+.formView {
+    width: inherit;
+    height: 30px;
 }
 
 /*
