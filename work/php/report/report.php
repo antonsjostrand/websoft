@@ -186,7 +186,36 @@
 
 <section>
 <h2>S06</h2>
-<p>Here is the text for this section.</p>
+<p class="report-question">What is your own opinion on popularity of programming languages and what are your thoughts of future popularity among programming languages?
+        </p>
+                    
+        <p class="report-answer">
+            I would say that my opinion is that the current popularity of programming languages are in a stage were the programming languages that have been around for a long time is the most popular. I guess this is due to the fact that they are the most well-developed languages at this very moment but also from the fact that there might not have been to many competitors back when they were created. Such languages as Java and C fit into this quite well. The future popularity of programming languages I think will soley depend on easy they are to learn but still provide good functionality, and this is because I think this area of work will become more and more popular. Especially now since the schools are picking up programming at earlier stages in educations, such as junior schools. Therefore, I think that the easier one language is to understand and use the more popular it will become. The more advanced, controlling languages such as C and Java might not be as popular. But I guess they will always be needed. To conclude, I think that high-level languages will be increasingly popular.
+        </p>
+
+        <p class="report-question">What will be your own choice for selecting future programming languages?</p>
+                 
+        <p class="report-answer">
+            My choice of programming language to work with and conduct my own projects within will have to wait until I have gathered enough experience from working to make a fair choice. However, if I were to guess I will be ending up in the back-end part of applications. Therefore I might choose to work with languages such as Go, C# or even Java.
+        </p>
+
+        <p class="report-question">Do your own investigation on https://trends.google.com to customize your own comparison on programming languages (or frameworks) and elaborate on the results.</p>
+                    
+        <p class="report-answer">
+           The area of my investigation is tied to my workplace and the programming languages I interact with there. I find it interesting to see how the popularity of these techniques have changed throughout the years, according to google-trends. So, the different languages I've interacted with is Go and PHP at my current workplace. They have changed from mostly PHP to only Go for all their new applications, or atleast as much as possible. According to google-trends, the popularity of PHP has dropped significantly the last few years, while that of Go has been either slightly increasing or staying stable. PHP is still more "popular" than Go, but according to this trend, this will change in the near future. I think this mostly depends on the fact that people might want to try something new, and that Go offers some new features but also binds a lot of good features of other programming languages together into one language. I also think that people are always looking for the best way to do things, resulting in them experimenting with new things. Therefore, this could also be temporary, resulting in PHP increasing in popularity again and Go remaining where it is.
+        </p>
+
+        <p class="report-question">If you were to recommend a language/framework/technology to your potential employer and your next large project, what would it be and how would you “sell it”?</p>
+                    
+        <p class="report-answer">
+            Depending on the project I guess, but for the projects similar to the ones I'm interacting with in school and at work I would recommend them to work with some type of JavaScript. There is a lot of people that wants to work with JavaScript so finding new personnel that could easily get into the code and start working wouldn't be hard. I guess I would recommend them to utilize TypeScript, this due to the fact that I think this should be the standard for everyone. I feel like TypeScript easily erases some problems due to its strong typing. So I guess my USP:s for TypeScript would be that it is a lot of people that could work with it and that provides strong typing.
+        </p>
+
+        <p class="report-question">What is your TIL for this course section?</p>
+                    
+        <p class="report-answer">
+            My "TIL" for this course section was basically to use tools to find data on how programming languages are utilized and how popular they are. I also found out that Go is not nearly as popular as I thought it was and that Java and C is still the kings of programming languages when it comes to utilization.
+        </p>
 </section>
 
 <section>
