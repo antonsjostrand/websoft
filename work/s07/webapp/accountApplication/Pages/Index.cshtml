@@ -9,8 +9,11 @@
     <p>This application can be used to view and interact with your accounts.</a>.</p>
 </div>
 
+<a href="/api/accounts">All accounts in JSON</a>
+
 @foreach(var account in Model.Accounts)
 {
-    <h2>@account.Label</h2>
+    var data = "api/accounts/" + account.Number;
+    <h2>@account.Label <a href=@data>JSON-Data</a></h2>
 }
 
