@@ -155,6 +155,13 @@ namespace accountApplication{
             Console.Write("Enter the owner in numbers >> ");
             var newOwner = Console.ReadLine();
 
+            foreach(Account account in accounts){
+                if (account.Number.ToString().Equals(newAccountNumber)){
+                    Console.WriteLine("Account number already exists.");
+                    return;
+                }
+            }
+
             Account newAccount = new Account(Int32.Parse(newAccountNumber), Int32.Parse(newAccountBalance), newLabel, Int32.Parse(newOwner));
 
             accounts.Add(newAccount);

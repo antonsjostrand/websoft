@@ -1,8 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Text.Json;
-using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace accountApplication
 {
@@ -13,8 +9,8 @@ namespace accountApplication
         {
 
             AccountInteractor.startUp();
-
             bool appIsRunning = true;
+            
             Console.Clear();
 
             while(appIsRunning){
