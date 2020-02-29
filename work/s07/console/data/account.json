@@ -7,20 +7,26 @@
   },
   {
     "Number": 222222,
-    "Balance": 1,
+    "Balance": 12,
     "Label": "Savings",
     "Owner": 22
   },
   {
     "Number": 333333,
-    "Balance": 23,
+    "Balance": 11,
     "Label": "Travel",
     "Owner": 22
   },
   {
     "Number": 42,
-    "Balance": 12,
+    "Balance": 42,
     "Label": "Secret",
     "Owner": 42
+  },
+  {
+    "Number": 52,
+    "Balance": 2,
+    "Label": "Test",
+    "Owner": 1337
   }
 ]
