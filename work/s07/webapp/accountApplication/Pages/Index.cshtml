@@ -18,3 +18,24 @@
     <p>To view the JSON-format of the above account click <a href=@data>here</a></p>
 }
 
+<form action="/api/accounts" method="post">
+    <fieldset>
+        <legend>Transfer money</legend>
+        <div>
+            <label for="originAccount">Origin account</label>
+            <input type="number" id="originAccount" name="originAccount">
+        </div>
+        <div>
+            <label for="targetAccount">Target account</label>
+            <input type="text" name="targetAccount" value="">
+        </div>
+        <div>
+            <label for="amount">Amount</label>
+            <input type="text" name="amount" value="">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </fieldset>
+</form>
+
