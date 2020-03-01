@@ -33,5 +33,22 @@ namespace accountApplication.Services
                     });
             }
         }
+
+        public void SaveAccounts(IEnumerable<Account> accounts){
+
+            using (var jsonFileReader = File.Open(JsonFileName, FileMode.Create))
+            {
+                JsonSerializer.Serialize<IEnumerable<Account>>(
+                    new Utf8JsonWriter (
+                        jsonFileReader,
+                        new JsonWriterOptions {
+                            SkipValidation = true,
+                            Indented = true
+                        }
+                    ),
+                    accounts
+                );
+            }
+        }
     }
 }
