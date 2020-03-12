@@ -275,7 +275,7 @@
         - Serve images in next-gen formats (save 3,53s)<br/>
         <br/>
 
-        So basically what most pages need to do is to make sure that the do not block the rendering since this affects the pages performance metrics. Sending images in newer formats such as JPEG 2000 appears to be quite much better performance wise than sending it in PNG or JPEG. Removing unused CSS seems like an easy task to do to increase performance as well.<br/>
+        So basically what most pages need to do is to make sure that the do not block the rendering since this affects the pages performance metrics. Sending images in newer formats such as JPEG 2000 appears to be quite much better performance wise than sending it in PNG or JPEG. Reddit is a good example of a website that would benefit a lot by using another format. The formats they are using now apparently slows down the website a lot. Removing unused CSS seems like an easy task to do to increase performance as well.<br/>
 
     </p>
 
