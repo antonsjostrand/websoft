@@ -303,7 +303,35 @@
 
         <section>
         <h2>S09</h2>
-        <p>Here is the text for this section.</p>
+        <p class="report-question">Elaborate on a few (3-5) different security issues or concerns, from your own experience, related to web application security and relate them to the OWASP top ten</p>
+
+        <p class="report-answer">
+            Something I've always been aware of and even more so now that I've studied computer science for almost three years and have started working in the field is the aspect of trust. How do you know that you can trust this website, and how do you know that you can trust that new software. This issue of trust is something I take very serious and always have and probably always will. For example, when developing my own projects I will always only use well-known third-party libraries that recieve regular updates to minimize the risk of my application becoming exposed to some security flaw. This issue is directly relatable to number 9 in the OWASP Top ten.<br/><br/>   
+
+            One security issue that came to my attention during the courses we had in databases and computer security was the issue of injection attacks. That not properly validating input could lead to massive security holes, allowing attackers to get a hold of sensitive data that they weren't authenticated to get. During all of our projects here at school I've almost always ended up handling the database and its contents. I wouldn't say I'm an expert but due to these courses bringing up the subject of injection attacks I've always tried to implement, if there was enough time, a proper validation scheme when accessing the database. This issue of injection attacks are also in the top then of OWASP.<br/><br/>   
+
+            And at the rate that society is becoming more and more digitalized and depending more and more on new technology there will always exist people will take advantage of this to harm other people. As I previously mentioned I always research a bit before starting to utilize a new website or software. I do never ever enter my own sensitive information into applications/websites that I do not know anything about. This awareness mostly comes from common sense, but also from the fact that I've understood that proper authentication might be hard to implement and any flaw could risk my data. Authentication problems that allows attackers to get a hold of my sensitive user data is one of the top ten OWASP issues.
+        </p>
+
+        <p class="report-question">Summarize by providing your own guidelines to a new web programmer on the topic “The essential guidelines to follow to create secure web applications”.</p>
+
+        <p class="report-answer">
+            The world of security in all contexts of development is complex. For a completely new programmer this area might be quite overwhelming. But the following would be my guidelines for new programmers:<br/><br/>
+            1. Use secure protocols (HTTPS)<br/>
+            2. Implement a proper authentication handler. <br/>
+            3. When storing data in the database, encrypt it with a secure algorithm <br/>
+            4. Utilize only well-know third-party software.<br/>
+            5. Validate all user input, even the smallest ones. <br/>
+            6. Have routines to follow, perhaps incase of an attack <br/>
+            7. Don't be afraid to consult other programmers that are more experienced. Security is a complex area that no one can handle on their own. <br/>
+
+        </p>
+
+        <p class="report-question">What is your TIL for this course section?</p>
+
+        <p class="report-answer">
+            This section I learned a lot about web security. I learned about a few new areas of security risks such as "XXE" and "Insecure Deserialization". I also understood that such easy things as proper logging and monitoring can help in realizing if a system is under attack or if someone has tampered with data they are not allowed to. I didn't think of logging as this kind of tool before.
+        </p>
         </section>
 
         <section>
