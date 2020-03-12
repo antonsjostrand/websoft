@@ -263,7 +263,42 @@
 
         <section>
         <h2>S08</h2>
-        <p>Here is the text for this section.</p>
+        <p class="report-question">Analyzation</p>
+        <p class="report-answer">
+            For this assignment I wanted to assess the performance of three websites that I use in my daily life and I am therefore interested in how they perform in all the different metrics analyzed by the different tools we are to use.
+            The following pages are the ones I chose: stackoverflow.com, reddit.com & facebook.com. 
+            <br/><br/>
+            Link to the data collected in a google sheet:
+            <a href="https://drive.google.com/open?id=1aA4uSr0PvlDlQscp_-hzWQ3JL1v_ev1NmZrvo63dvW0">Google Sheet</a>
+            <br/><br/>
+            When using the different tools of performance measuring I found the results quite interesting. When comparing the sites with Devtools I found out that the result was quite the opposite of what I thought would happen. I thought that Facebook would perform better than it did. Facebook had a massive amount of requests compared to the other two pages. At most it had 364, while stackoverflow.com only had 51. One thing that was interesting as well was how much of the data that was actually retrieved from the cache when doing a "soft" reload. This caching also resulted in quite the difference in loading speed between "hard" and "soft" reloading. This goes to show how important it is to utilize the cache well.<br/><br/>
+            When comparing the websites using PageSpeed Insights the results were again quite astonishing. Reddit performed very poorly compared to the other two pages. Reddit scored 33/100 for desktop, while Stack Overflow scored an extremely good 98/100. Across the other metrics Reddit almost doubled the time of the other pages. For example, the metric "Time to interactive", Reddit had a time of 6,6s while Facebook had 2,9s and Stack Overflow 0,9s.
+            This is for me an extremely important metric, since this is the metric that will affect the users the most in my opinion. Slow response time/loading time will surely lead to less people using the application. What is interesting is that the exact same pattern, across all metrics, arose when checking the Mobile scores/metrics.<br/><br/>
+            When comparing the pages using Lighthouse I would say that the results were quite similar to the ones of PageSpeed Insights. Facebook and Reddit is at the bottom when it comes to performance scoring 8/100 and 20/100, Stack Overflow scored 86/100. The other metrics were quite similar across the board. The only one really sticking out was the SEO metric. Reddit nailed that with a perfect score of 100/100 while Facebook had 60/100 and Stack Overflow 80/100. Basically this means that Reddit is extremely well optimized in regards to being picked by search engines.
+            <br/><br/>
+    
+            Following are some suggestions that could make each website perform better.<br/><br/>
+            Facebook: <br/>
+            - Avoid multiple page redirects (save 1,11s) <br/>
+            - Eliminate render-blocking resources (save 0,83s)<br/>
+            <br/>
+            Stack Overflow: <br/>
+            - Eliminate render-blocking resources (save 1,83s)<br/>
+            - Remove unused CSS (save 0,3s) <br/>
+            - Defer offscreen images (save 0,15s)<br/>
+            <br/>
+            Reddit: <br/>
+            - Serve images in next-gen formats (save 3,53s)<br/>
+            <br/>
+    
+            So basically what most pages need to do is to make sure that the do not block the rendering since this affects the pages performance metrics. Sending images in newer formats such as JPEG 2000 appears to be quite much better performance wise than sending it in PNG or JPEG. Removing unused CSS seems like an easy task to do to increase performance as well.<br/>
+    
+        </p>
+    
+        <p class="report-question">What is your TIL for this course section?</p>
+        <p class="report-answer">
+            So for this section I learned a lot of things about web performance in general. I've also learned a lot about utilzing different tools to assess a website in different performance metrics. The result of the analyzation showed me that no page is perfect in all aspects and that you might not ever have the totally perfect website. The analyzation and lecture also brought the most common problems related to web performance to my attention.
+        </p>
         </section>
 
         <section>
