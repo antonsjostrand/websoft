@@ -32,9 +32,7 @@
             </p>
 
             <p class="report-answer">
-                I did know about the techniques Git and GitHub. These are tools that we have used throughout the program
-                and I've utilized them when working as well. I didn't know about Markdown or GitHub Pages, however they seem 
-                to be really convenient and I look forward to utilize them more.
+                I did know about the techniques Git and GitHub. These are tools that we have used throughout the program and I've utilized them when working as well. I didn't know about Markdown or GitHub Pages, however they seem to be really convenient and I look forward to utilize them more.
             </p>
             
             <p class="report-question">Have you ever created websites before?</p>
@@ -50,8 +48,7 @@
 
             <p class="report-answer" >
                 I haven't gotten that much experience or knowledge in the field of web application development at this very moment. 
-                The only experience I have at this very moment comes from working a bit at Axis in Lund where I coded a 
-                bit in PHP in their CRM-system and as previously mentioned some HTML and CSS. Unfortunately I had other tasks as well which mean I didn't get to do it all that much.
+                The only experience I have at this very moment comes from working a bit at Axis in Lund where I coded a bit in PHP in their CRM-system and as previously mentioned some HTML and CSS. Unfortunately I had other tasks as well which mean I didn't get to do it all that much.
                 My knowledge basically consists of the very basic stuff, such as what the different parts are invovled (front-end/back-end) and how web applications can 
                 communicate with each other. But now I've just started working at "Studentlitteratur" where I will be working in the back-end of one of their web applications.
                 So hopefully within a couple of weeks my knowledge and experience will be way greater than it is right now.
@@ -126,7 +123,26 @@
             <p class="report-question">Describe how you worked with the coding exercise, what grade do you aim for and how did your code turn out to be?</p>
 
             <p class="report-answer">
-                So for this coding exercise I figured that I would like to aim for grade 5. To achieve this I had to learn a lot of new things and understand the tasks correctly. Always when I work with coding tasks I try to be quite structured in the way I work, working with one task at the time. In this case I started working with everything that involved the school-api and finialized everything needed for grade 5. I then when on to the moving object and finally the flags. I would say that my code is decent, there is certainly room for improvement. But I guess the improvements will come as I get more experienced in working with JavaScript. There are certainly featuers that I don't know about and have therefore not utilized. But all in all, I feel that my code is structured properly and does what it is supposed to do. One thing that I do feel could be done better is the utilization of the JavaScript objects. I think that I found good use for them, but still feel that there is more to them than what I'm utilzing right now, which could feel a bit clunky. 
+                So for this coding exercise I figured that I would like to aim for grade 5. To achieve this I had to learn a lot of new things and understand the tasks correctly. Always when I work with coding tasks I try to be quite structured in the way I work, working with one task at the time. In this case I started working with everything that involved the school-api and finialized everything needed for grade 5. I then went on to the moving object and finally the flags. I would say that my code is decent, there is certainly room for improvement. But I guess the improvements will come as I get more experienced in working with JavaScript. There are certainly features that I don't know about and have therefore not utilized. But all in all, I feel that my code is structured properly and does what it is supposed to do. One thing that I do feel could be done better is the utilization of the JavaScript objects. I think that I found good use for them, but still feel that there is more to them than what I'm utilzing right now, which could feel a bit clunky.<br/><br/>
+                
+                <strong>Grade 3:</strong>
+                The requirements for this grade are fulfilled. <br/>
+                I created a table that is filled with data for the selected municipality. There is no reload needed for the data to be shown in the table. I added my own style to the table as well, making it look quite nice in my opinion. <br/>
+                Regarding the moveable object I added a HKR-logo to the footer via the move.js script. The functionality is quite simple, each click moves it either left or right depending on its current position.<br/>
+                All pages were added to the navbar aswell.<br/><br/>
+
+                <strong>Grade 4:</strong>
+                The requirements are fulfilled.<br/>
+                To make my moveable object a bit more dynamic I added an event to the footer of the page. When entering the footer the object is shown, when leaving the footer the object is hidden.<br/>
+                I added a flag.html page as well, and the flags were created purely with HTML and CSS.<br/><br/>
+
+                <strong>Grade 5:</strong>
+                The requirements are fulfilled.<br/>
+                I added a select to the selection of schools which is filled with the name of each municipality. When clicking on a name all the schools are fetched for that municipality. Instead of fetching the data from three different JSON-files I utilized a CORS-proxy, this allows me to fetch all the data directly from the api with my browser. Therefore, in my select all the municipalities are shown.<br/>
+                I added a transition for the flags. You have to click the name for the flag to show up, with a smooth transistion from hidden to visible. Before you can change to another flag you have to click the flag that pops up to make it go from visible to hidden in a smooth transistion.<br/>
+                I also utilized JS-objects to handle both my moveable object and the flags. I felt that I found a good use for them.<br/><br/>
+
+
             </p>
 
             <p class="report-question">What is your TIL for this course section?</p>
@@ -157,7 +173,30 @@
         <p class="report-question">Explain how you did take on the coding assignment, did you have a plan and did it work?</p>
                 
         <p class="report-answer">
-            Well, this coding assignment I worked my way up from the bottom. I started with all the requirements for grade 3, then I moved on to all the requirements for grade 4 and then finally all the requirements for grade 5. So basically my plan was to take it slow and structured, finalizing each grades-requirements before moving on to the next one. I would say that it worked good actually. I encountered some problems with how I coded something for one task that had to be changed for another task. But nothing big, so overall I would say that my plan worked.
+            Well, this coding assignment I worked my way up from the bottom. I started with all the requirements for grade 3, then I moved on to all the requirements for grade 4 and then finally all the requirements for grade 5. So basically my plan was to take it slow and structured, finalizing each grades-requirements before moving on to the next one. I would say that it worked good actually. I encountered some problems with how I coded something for one task that had to be changed for another task. But nothing big, so overall I would say that my plan worked.<br/><br/>
+
+            <strong>Grade 3:</strong>
+            The requirements for this grade are fulfilled. <br/>
+            When running my application you can start it with the command "node index" and the port will be 1337. <br/>
+            I added a copy of my report folder so that all the different pages are accessible from the node application.<br/>
+            I added a path "lotto" that does exactly what the instructions say, printing out a random series of 7 numbers.<br/>
+            The code is well organized.<br/><br/>
+
+            <strong>Grade 4:</strong>
+            The requirements are fulfilled.<br/>
+            The path lotto-json will provide you with a JSON-response that holds the data of the lotto draw<br/>
+            Sending in your on lotto row as a querystring will provide you with a json-response, containing: The lotto series, your row and the amount of matching numbers.<br/><br/>
+
+            <strong>Grade 5:</strong>
+            The requirements are fulfilled.<br/>
+            I added the possibility to send in the querystring on the path "lotto". <br/>
+            The webpage will contain the following when you do this: <br/>
+            - A table showing the random numbers (the lotto series). <br/>
+            - A table showing your numbers (the lotto row)<br/>
+            - An explanation of how which numbers you had correct and how many.<br/>
+            - I also added for fun an output in both tables marking the matching numbers in green <br/><br/>
+
+
         </p>
 
         <p class="report-question">What grade did you aim for and was it a difficult level?</p>
@@ -190,7 +229,27 @@
         <p class="report-question">Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?</p>
                 
         <p class="report-answer">
-            I aimed for the grade 5 this exercise. Yet again I tried to work my way through all the requirements one by one, commiting and pushing my changes when I had reached each grade. I must say that I'm quite pleased with the result, the functionality is in place and it does what it is supposed to. However I feel like I could probably have structured the code a bit better and probably made it even better. I also feel that the design of the pages could have been better as well.
+            I aimed for the grade 5 this exercise. Yet again I tried to work my way through all the requirements one by one, commiting and pushing my changes when I had reached each grade. I must say that I'm quite pleased with the result, the functionality is in place and it does what it is supposed to. However I feel like I could probably have structured the code a bit better and probably made it even better. I also feel that the design of the pages could have been better as well.<br/><br/>
+
+            <strong>Grade 3:</strong>
+            The requirements for this grade are fulfilled. <br/>
+            I converted all my .html files to .php.<br/>
+            I created a view for the header and one for the footer, these were included in my different pages and were used to structure the pages nicely.<br/>
+            I updated my database according to the instructions.<br/>
+            I implemented a search-page in which you can perform a wildcard search. <br/>
+            All the pages were added to the navbar.<br/><br/>
+          
+            <strong>Grade 4:</strong>
+            The requirements are fulfilled.<br/>
+            Through the navbar you can access a create-page in which you can create new rows that are inserted into the database. <br/>
+            Through the navbar you can also access a update-page that does what its name suggests, you can here update rows in the database.<br/><br/>
+
+            <strong>Grade 5:</strong>
+            The requirements are fulfilled.<br/>
+            A delete-page was added, allowing users to delete rows from the database if they want to. <br/>
+            A read-page was added, this page presents all the data from the database in a HTML-table. It also contains four links that you can click to perform all the different CRUD-operations on the data in the database.<br/>
+            When clicking a link the page renders that particular CRUD-operation below the HTML-table. This means that you stay at the same page (read.php) and from there you can perform all the different CRUD-operations.<br/>
+            To make this possible I had to create views of each of the CRUD-operations and requiring them when the link is clicked.<br/><br/>
         </p>
 
         <p class="report-question">What is your TIL for this course section?</p>
@@ -251,7 +310,40 @@
             <p class="report-question">Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?</p>
         
             <p class="report-answer">
-                For this coding exercise I did one application at a time, starting with the console application. I don't know why but the console application intrigued me more than the webapplication for this assignment. I aimed for grade 5 and I'm quite happy with the result. Everything works and I learned a lot throughout the assignment. There is for sure room for improvement though.
+                For this coding exercise I did one application at a time, starting with the console application. I don't know why but the console application intrigued me more than the webapplication for this assignment. I aimed for grade 5 and I'm quite happy with the result. Everything works and I learned a lot throughout the assignment. There is for sure room for improvement though.<br/><br/>
+
+                <strong>Grade 3:</strong>
+                The requirements for this grade are fulfilled. <br/>
+                <strong>Console:</strong><br/>
+                My console application provides the user with a menu in which they can choose between the required assignment choices. <br/>
+                I also provide a pretty output that makes it easier to read and understand the result of each choice<br/><br/>
+
+                <strong>Webapp:</strong><br/>
+                I've created a webapp that has a page About, describing the task briefly. In the homepage I have table showing all the different accounts available from the JSON-file. I have a model class named Account and a service class handling the json-file, basically the service class is my "database interactor".<br/>
+                I have added the paths needed, "api/accounts" and "api/account/<em>number</em>".<br/>
+                The paths are handled by my controller AccountController, the controller intern communicates with my service to perform the correct action.<br/>
+                The paths do what they are supposed to do and they can be accessed directly from the homepage, "api/accounts" is a link that responds with the data of all accounts in json-format. "api/account/<em>number</em>" responds with an individual accounts data and can be accessed from the HTML-table.<br/><br/>
+              
+                <strong>Grade 4:</strong>
+                The requirements are fulfilled.<br/>
+                <strong>Console:</strong><br/>
+                I added a search option to the console application, allowing the user to search for a string.<br/>
+                I also added a move option, this allows the users to move money from one account to another. These changes are then saved to the JSON-file so that if the application is restarted the new changes will be present.<br/><br/>
+
+                <strong>Webapp:</strong><br/>
+                I added the functionality to send in a PUT-request to the webapplication. This is handled by the AccountController, this is done on the path: "api/account/<em>number</em>/transfer". The targeted ID and amount of money is put into the querystring.<br/> An example: http://localhost:5000/api/account/111111/transfer?targetId=42&amount=11 <br/>
+                This was tested with the tool Postman. <br/><br/>
+
+                <strong>Grade 5:</strong>
+                The requirements are fulfilled.<br/>
+                <strong>Console:</strong><br/>
+                Yet another choice was added to the menu, create new account. The application will ask you to enter the needed information and then it will save it to the json-file. This will result in the changes being present even if you restart the application.
+                The code has also been split into three different files. <br/><br/>
+
+                <strong>Webapp:</strong><br/>
+                I added a form on the home-page that allows the user to specify the account he/she wants to transfer money from, the account to receive the money and the amount. The form is using the POST-method and this is handled by the AccountController.<br/>
+                I think that I have structured my code nicely and that I'm reusing code whenever possible.<br/><br/>
+
             </p>
         
             <p class="report-question">What is your TIL for this course section?</p>

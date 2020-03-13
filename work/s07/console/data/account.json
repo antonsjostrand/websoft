@@ -19,13 +19,13 @@
   },
   {
     "Number": 42,
-    "Balance": 28,
+    "Balance": 17,
     "Label": "Secret",
     "Owner": 42
   },
   {
     "Number": 52,
-    "Balance": 16,
+    "Balance": 27,
     "Label": "Test",
     "Owner": 1337
   },
@@ -34,5 +34,11 @@
     "Balance": 100,
     "Label": "Food",
     "Owner": 22
+  },
+  {
+    "Number": 72,
+    "Balance": 1000,
+    "Label": "Savings",
+    "Owner": 21
   }
 ]

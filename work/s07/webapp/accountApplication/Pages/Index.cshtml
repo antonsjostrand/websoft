@@ -2,6 +2,7 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var row = 0;
 }
 
 <div class="text-center">
@@ -11,14 +12,35 @@
 
 <p>To access all counts in JSON-format click <a href="/api/accounts">here</a></p>
 
+<table class="accountTable">
+    <tr class="accountColumn">
+        <th>Number</th>
+        <th>Balance</th>
+        <th>Label</th>
+        <th>Owner</th>
+        <th>Data</th>
+    </tr>
 @foreach(var account in Model.Accounts)
 {
-    var data = "api/accounts/" + account.Number;
-    <h2>@account.Label </h2>
-    <p>To view the JSON-format of the above account click <a href=@data>here</a></p>
-}
+    var data = "api/account/" + account.Number;
+    var rowClass = "accountRow" + row;
+    <tr class="@rowClass">
+        <td>@account.Number</td>
+        <td>@account.Balance</td>
+        <td>@account.Label</td>
+        <td>@account.Owner</td>
+        <td><a href=@data>Data</a></td>
+    </tr>
 
-<form action="/api/accounts" method="post">
+    if(row == 1){
+        row = 0;
+    }else {
+        row = 1;
+    }
+}
+</table>
+
+<form action="/api/account" method="post">
     <fieldset>
         <legend>Transfer money</legend>
         <div>

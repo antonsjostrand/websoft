@@ -9,24 +9,24 @@ using System.Linq;
 namespace accountApplication.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class AccountsController : ControllerBase
+    [Route("api/")]
+    public class AccountController : ControllerBase
     {
-        public AccountsController(JsonFileAccountService accountService)
+        public AccountController(JsonFileAccountService accountService)
         {
             AccountService = accountService;
         }
 
         public JsonFileAccountService AccountService { get; }
 
-        [Route("")]
+        [Route("accounts")]
         [HttpGet]
         public IEnumerable<Account> Get()
         {
             return AccountService.GetAccounts();
         }
 
-        [Route("{id:int}")]
+        [Route("account/{id:int}")]
         [HttpGet]
         public string GetAccount(int id){         
 
@@ -39,13 +39,14 @@ namespace accountApplication.Controllers
             return "Error: Account with ID: " + id + " doesn't exist..";
         }
 
-        [Route("{id:int}/transfer")]
+        [Route("account/{id:int}/transfer")]
         [HttpPut]
         public string transferMoney(int id, string targetId, string amount){
 
            return AccountService.transferMoney(id, targetId, amount);
         }
 
+        [Route("account")]
         [HttpPost]
         public String transferMoneyForm([FromForm]TransferForm transferForm){
 
