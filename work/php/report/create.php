@@ -10,7 +10,6 @@
     $create = $_POST["create"] ?? null;
 
     if ($create){
-        echo "TEST!";
         $db = connectDatabase($dsn);
         $res = insertTech($db, $name, $type, $manufacturer);
     }
