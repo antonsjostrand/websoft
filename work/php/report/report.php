@@ -415,7 +415,26 @@ My "TIL" for this course section was basically to use tools to find data on how 
 
 <section>
 <h2>S10</h2>
-<p>Here is the text for this section.</p>
+        <p class="report-question">Write a general paragraph about how the project was implemented. Problems / solutions / simple / difficult / fast / long time, etc. Was the project easy or difficult? Did it take a long time? What was difficult and what went easy? Was this a good and reasonable project for this course? How was it to work in a team?</p>
+
+        <p class="report-answer">
+            So me and my team implemented our project, a weekly to-do application, utilizing ASP.NET as our development platform, writing it in C# and utilzing MySQL as our DBMS. We aimed for grade 5. We pages that are partly server-side generated with the help of Razor, but then we also utilized a RestAPI to dynamically change the content of the pages. I feel that that was the way to go for this type of application we created. There is still a lot of room for improvement however, but this comes with experience.<br/>
+            During the course of the project we sure faced some problems but nothing that was to hard to overcome. The main issue we had was understanding the capabilities of ASP.NET since it is a totally new development platform for us. I feel that we got the hang of it at the end of the project but there is still much left to learn.For example, we solved some issues that we realised could have been solved in a different way by utlizing the packages/libraries that we didn't know of. Overall the project difficulty was medium, a lot of new stuff to learn but due to C# being very similar to Java we could quickly code the project.<br/>
+            I personally feel that this type of project is reasonable for this type of course, it was really fun. However, due to the course we have in parallel I feel that this course project did suffer a bit from not being the focus of our attention in school. Our teamwork was great, I worked in the back-end and Hashim and André worked together in the front-end. We have worked together quite often during our time in school and it always works out fine.
+        </p>
+
+        <p class="report-question">Finish with a final paragraph with your thoughts on the course and what you think about the material and the guide (about 5-10 sentences). Provide feedback to teachers and suggest any improvement suggestions for upcoming course opportunities. Are you satisfied / dissatisfied? Will you recommend the course to your friends / colleagues? On a scale of 1-10, what grade do you give the course?</p>
+
+        <p class="report-answer">
+            This course have overall been great. I've had a lot of fun and I've also learned a lot of new techniques. I really like the way the entire course was structured, utilzing GitHub. That was great and I think that is the way programming should be taught, by utlizing the tools at hand and not only focusing on reports and powerpoints. Big thumbs up for that. I also think that Mikael, the teacher, was really easy to listen and talk to. If there is something I would like to improve I guess it would be to scale down the amount of techniques covered in the course. When we cover all of these techniques I feel like it becomes a bit cluttered at times. One more thing is the reading material in my opinion. A lot of the reading materials have been links to documentations, perhaps there could have been a source of information that explains the basics and fundamentals of each technique except the documentation. Cause when reading through the documentations you will find yourself surrounded by information that might not that be relevant to us at this point in time.<br/>
+            Overall, I'm very satisfied with this course and I would most certainly recommend this course to other people. I would rate this course 8/10, with some small adjustments I think 10/10 is not far away. 
+        </p>
+
+        <p class="report-question">What is your final TIL for this course?</p>
+
+        <p class="report-answer">
+            My final TIL for this course is that I've improved my skills in ASP.NET dramatically and I've become a better C# programmer. I also feel that the way we tested our application helped me, and perhaps the team overall, to become a better debugger. Overall from this course I really enjoy my new found skills in JavaScript and C#.
+        </p>
 </section>
 
 </article>
